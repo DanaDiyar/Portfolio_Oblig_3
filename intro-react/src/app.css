@@ -1,0 +1,125 @@
+:root {
+    --main-bg-color: #f0f0f0;
+    --header-bg-color: #333;
+    --accent-color: #f2c94c;
+    --text-color: #000;
+    --button-bg-color: #ccc;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+header nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.welcome {
+    text-align: center;
+    background-color: var(--accent-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.experience-grid, .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.experience-card, .project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.experience-card h3, .project-card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.experience-card p, .project-card p {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+form {
+    background-color: var(--accent-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: var(--button-bg-color);
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: darken(var(--button-bg-color), 10%);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--accent-color);
+}
+  
+.submit-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+.submit-button:hover {
+    background-color: #0056b3;
+}
+  
+  
+
